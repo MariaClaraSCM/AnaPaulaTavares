@@ -80,3 +80,78 @@ header img {
     text-align: center;
     margin: 4vw 0vw 2vw 0vw;
 }
+
+.ajusteCards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card2 img,
+#card3 img {
+    width: 25vw;
+    border-radius: 1vw;
+}
+
+#card1 img {
+    width: 23vw;
+    border-radius: 1vw;
+}
+
+.modal {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+
+@media screen and (min-width: 55px) and (max-width: 650px) {
+    html{
+        width: 86vh;
+    }
+
+    header {
+        display: flex;
+        width: 86vh;
+        position: absolute;
+        top: 0;
+        background-color: #BF9673;
+    }
+    
+    header img {
+        width: 12vh;
+        padding: 1vw;
+    }
+
+    .banner {
+        margin-top: 18vh;
+        display: block;
+        background-color: #556773;
+        color: #E4E2DA;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .textTtl {
+        width: 100%;
+        text-align: center;
+        font-size: 5vh;
+    }
+
+    .textTxt {
+        padding: 0vw 5vw 5vw;
+        width: 81vh;
+        text-align: justify;
+        font-size: 3vh;
+    }
+
+    .bio {
+        display: flex;
+        align-items: end;
+        justify-content: space-around;
+    }
+}
