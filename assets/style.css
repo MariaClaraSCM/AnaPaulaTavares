@@ -9,6 +9,11 @@ body {
     font-family: "Poppins", serif;
 }
 
+h1,
+p {
+    cursor: default;
+}
+
 header {
     display: flex;
     width: 100%;
@@ -69,6 +74,10 @@ header img {
     border-radius: 1vw;
 }
 
+.bioMedia {
+    display: none;
+}
+
 .txt {
     padding: 3vw;
     font-size: 1.2vw;
@@ -100,26 +109,45 @@ header img {
 }
 
 .modal {
-    display: flex;
     width: 50%;
-    align-items: center;
-    justify-content: center;
     background-color: #FFF;
+    transform: translate(50%, 0);
+    position: absolute;
+    display: none;
+    top: 232vh;
+    border-radius: 1vw;
 }
 
+.modal p {
+    padding: 2vw 2vw 2vw 2vw;
+    cursor: default;
+}
+
+.modal div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    cursor: pointer;
+}
+
+
 @media screen and (min-width: 55px) and (max-width: 650px) {
-    html{
-        width: 86vh;
+    html {
+        width: 92vh;
     }
 
     header {
         display: flex;
-        width: 86vh;
+        width: 92vh;
         position: absolute;
         top: 0;
         background-color: #BF9673;
     }
-    
+
     header img {
         width: 12vh;
         padding: 1vw;
@@ -136,22 +164,49 @@ header img {
         width: 100%;
     }
 
-    .textTtl {
+    h1 {
         width: 100%;
         text-align: center;
-        font-size: 5vh;
+        font-size: 5.5vh;
     }
 
     .textTxt {
         padding: 0vw 5vw 5vw;
-        width: 81vh;
+        width: 86vh;
         text-align: justify;
         font-size: 3vh;
     }
-
     .bio {
-        display: flex;
-        align-items: end;
-        justify-content: space-around;
+        display: none;
     }
+
+    .bioMedia {
+        display: block;
+        width: 100%;
+    }
+
+    .ajusteTXTMedia {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 7vw 0vw;
+    }
+
+    .ajusteTXTMedia img{
+        width: 25vw;
+    }
+
+    .radioMedia {
+        background-color: #40322A;
+        width: 80%;
+        height: 95vw;
+        border-radius: 11%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #E4E2DA;
+        text-align: center;
+    }
+
 }
